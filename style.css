@@ -1,0 +1,42 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    text-align: Center;
+    border: solid 10px black;    
+    background-color: rgb(9, 9, 51);
+    font-size: 100px;
+    padding: 10px 20px;
+    color: whitesmoke;
+    font-family: garamond;
+    margin-bottom: 0;
+}
+
+nav > ul > li {
+    text-align: center;
+    border: solid 2px black;
+    background-color: brown;
+    display: inline;
+    margin: 10px 100px;
+    padding: 5px 10px;  
+}
+
+#coffee {
+    display: inline;
+} 
+
+#coffee img {
+    height: 290px
+}
+
+section > p {
+    background-color: whitesmoke;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+    display: inline;
+    margin: 250px;
+}
