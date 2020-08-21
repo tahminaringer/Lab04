@@ -40,3 +40,27 @@ function answer(emailQuestion){
     }
 }
 answer(emailQuestion);
+
+function numberGuessingGame() {
+    var correctAnswer = 5;
+    var playGame = prompt('Do you want to play a game>');
+    while(playGame === 'yes'){
+        for (var i = 0; i<5; i = i + 1){
+            var userGuess = parseInt(prompt("Enter A Number 1-35"));
+            if(userGuess === correctAnswer){
+                alert('You Are Correct!')
+                break;
+            } else if (userGuess < correctAnswer){
+                alert('You guessed too low')
+            } else if (userGuess > correctAnswer){
+                alert('You guessed too high')
+            }
+            if(i === 4){
+                alert('The correct answer is ' + correctAnswer);
+            }
+        }
+        playGame = prompt('Do you want to play another round?');
+    }
+}
+
+numberGuessingGame();
